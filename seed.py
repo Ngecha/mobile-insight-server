@@ -26,6 +26,7 @@ with app.app_context():
         
     db.session.add_all(users)
     db.session.add_all(reviews)
+    db.session.commit()
 
     products = [
         {
